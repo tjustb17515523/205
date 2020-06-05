@@ -9,7 +9,7 @@
                 padding: 0pc;
             }
             body{
-                background: url("BJ.jpg");
+                background: url("../img/BJ.jpg");
                 background-repeat: no-repeat
             }
             #top{
@@ -82,22 +82,21 @@
         </style>
     </head>
     <body>
-        <body background="BJ.jpg">
         <div id="app">
             <div id="top">
                 <p>205Team-MX</p>
                 <p>微博:205Mmx  bilibili:205Mmx  抖音:205Mmx</p>
             </div>
             <div id= "P205TM">
-                <img src="205TM.png"/>
+                <img src="../img/205TM.png"/>
             </div>
         
             <div id = "second">
                 <div id ="JJ">
-                    <img src="205JJ.png"/>
+                    <img src="../img/205JJ.png"/>
                 </div>
                 <div id ="P205">
-                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="205Parkour.png">
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/205Parkour.png">
                 </div>
                 <div id="PL205">
                 <a href="205Parkour.html"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
@@ -105,22 +104,46 @@
             </div>
 
             <div id ="third">
-                <div id ="GT">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <img src="1.gif"/></div>
+                <div id ="GT">
+                    <script language="javascript" type="text/javascript">
+                        var ranl = 0;
+                        var useRand = 0;
+                        img = new Array;
+                            images[1] = new Image();
+                            images[1].src = "../img/P1.png";
+                            images[2] = new Image();
+                            images[2].src = "../img/P2.png";
+                            images[3] = new Image();
+                            images[3].src = "../img/P3.png";
+                            images[4] = new Image();
+                            images[4].src = "../img/P4.png";
+                            function swapPic(){
+                                var imgnum = images.length-1;
+                            do{
+                                var randnum = Math.random();
+                                    randl = Math.round((imgnum-1)*randnum)+1;
+                                }while(randl==useRand);
+                                useRand = randl;
+                                document.randimg.src = images[useRand].src
+                                        setTimeout('swapPic()',2000);
+                            }
+                    </script>
+                    <img name = "P1" src="../img/P1.png">
+                </div>    
                 <div id ="SP1">
                     <video width="360" height="360" controls="controls">
-                        <source src="this is the life.mp4" type="video/mp4" />
-                        <object data="this is the life.mp4" width="360" height="360">
-                            <embed src="this is the life.mp4" width="360" height="360" />
+                        <source src="../video/this is the life.mp4" type="video/mp4" />
+                        <object data="../video/this is the life.mp4" width="360" height="360">
+                            <embed src="../video/this is the life.mp4" width="360" height="360" />
                         </object>
                     </video>
                     <center style="color: white">this is the life</center>
                 </div>
                 <div id ="SP2">
                     <video width="360" height="360" controls="controls">
-                        <source src="2015年度总结.mp4" type="video/mp4" />
-                        <object data="2015年度总结.mp4" width="360" height="360">
-                            <embed src="2015年度总结.mp4" width="360" height="360" />
+                        <source src="../video/2015年度总结.mp4" type="video/mp4" />
+                        <object data="../video/2015年度总结.mp4" width="360" height="360">
+                            <embed src="../video/2015年度总结.mp4" width="360" height="360" />
                         </object>
                     </video>
                     <center style="color:white">2015年度总结</center>
@@ -130,30 +153,30 @@
             <div id ="fourth">
                 <div id = "S2051">
                     <div id ="S205"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <img src="205SB.png"></div>
+                        <img src="../img/205SB.png"></div>
                     <div id = "SP3">
                         <video width="240" height="240" controls="controls">
-                            <source src="chill.mp4" type="video/mp4" />
-                            <object data="chill.mp4" width="240" height="240">
-                                <embed src="chill.mp4" width="240" height="240" />
+                            <source src="../video/chill.mp4" type="video/mp4" />
+                            <object data="../video/chill.mp4" width="240" height="240">
+                                <embed src="../video/chill.mp4" width="240" height="240" />
                             </object>
                         </video>
                         <center style="color: white">2020-5-5 chill</center>
                     </div>
                     <div id = "SP4">
                         <video width="240" height="240" controls="controls">
-                            <source src="年前LastSakte.mp4" type="video/mp4" />
-                            <object data="年前LastSakte.mp4" width="240" height="240">
-                                <embed src="年前LastSakte.mp4" width="240" height="240" />
+                            <source src="../video/年前LastSakte.mp4" type="video/mp4" />
+                            <object data="../video/年前LastSakte.mp4" width="240" height="240">
+                                <embed src="../video/年前LastSakte.mp4" width="240" height="240" />
                             </object>
                         </video>
                         <center style="color: white">2020-1-23 年前LastSakte</center>
                     </div>
                     <div id = "SP5">
                         <video width="240" height="240" controls="controls">
-                            <source src="2019北科珠江最佳进步之星奖.mp4" type="video/mp4" />
-                            <object data="2019北科珠江最佳进步之星奖.mp4" width="240" height="240">
-                                <embed src="2019北科珠江最佳进步之星奖.mp4" width="240" height="240" />
+                            <source src="../video/2019北科珠江最佳进步之星奖.mp4" type="video/mp4" />
+                            <object data="../video/2019北科珠江最佳进步之星奖.mp4" width="240" height="240">
+                                <embed src="../video/2019北科珠江最佳进步之星奖.mp4" width="240" height="240" />
                             </object>
                         </video>
                         <center style="color: white">2019-11-18 2019北科珠江最佳进步之星奖</center>
@@ -163,7 +186,7 @@
                     <a href="205SkateBoard.html"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                 </div>
                 <div id ="XC">
-                    <a href="205XiangCe.html"><img src="sb.gif"/></a>
+                    <a href="205XiangCe.html"><img src="../img/sb.gif"/></a>
                 </div>
         </div>
     </body>
