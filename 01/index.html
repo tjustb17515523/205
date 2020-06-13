@@ -3,14 +3,22 @@
         <title>205Team-MX</title>
         <meta name="keywords" content="跑酷，滑板" />
         <style src="css/bootstrap.css"></style>
+        <link rel="stylesheet" href="../css//swiper.css">
         <style>
             *{
                 margin: 0;
                 padding: 0pc;
             }
+            a{
+                color:white;
+                text-decoration: none;
+            }
+            a:hover{
+                color:greenyellow;
+            }
             body{
                 background: url("../img/BJ.jpg");
-                background-repeat: no-repeat
+                background-repeat: no-repeat;
             }
             #top{
                 width: 100%;
@@ -34,52 +42,322 @@
                 height: 100px;
             }
             #P205{
-                width:27%;
+                width:30%;
                 height: 100px;
                 float:left;
-                background-color: rgb(178, 196, 22);
+                background-color: pink;
             }
             #PL205{
-                width: 5%;
+                width: 15%;
                 height: 100px;
-                float:left;
-                background-color: rgb(143, 125, 129);
+                float:right;
             }
             #GT{
                 width: 50%;
+                height: 291px;
+                overflow: hidden;
                 float: left;
             }
             #SP2{
                 width: 20%;
-                float: right;
+                float: left;
+                text-align:center;
             }
             #SP1{
-                width: 30%;
-                float: right;
+                width: 20%;
+                float:left;
+                text-align:center;
+            }
+            #S205{
+                width:43%;
+                height:391px;
+                float:left;
+                margin: 0 auto;
             }
             #S2051{
-                width:41.25%;
+                width: 647px;;
                 height: 100px;
-                float:left;
-                background-color: rgb(27, 185, 233);
+                float:right;
+                background-color: purple;
+                margin: 0 auto;
+            }
+            #PL2052{
+                width: 10%;
+                height: 100px;
+                float:right;
             }
             #XC{
                 width:50%;
+                height:391px;
                 float:right;
             }
             #SP3{
-                width: 33%;
+                width: 32%;
                 float: right;
+                text-align:center;
             }
             #SP4{
-                width: 33%;
+                width: 32%;
                 float: right;
+                text-align:center;
             }
             #SP5{
-                width: 33%;
+                width: 32%;
                 float: right;
+                text-align:center;
+            }
+            #WZ1{
+                width:45%;
+                float:left;
+                background-color:black;
+            }
+            #TJ{
+                width:100%;
+                height:30px;
+                float:right;
+                text-align:center;
+            }
+            #TJ1{
+                width:100%;
+                height:62.5px;
+                text-align:center;
+            }
+            #TJ2{
+                width:100%;
+                height:62.5px;
+                background-color:red;
+                text-align:center;
+                text-decoration:none;
+            }
+            #TJ3{
+                width:100%;
+                height:62.5px;
+                text-align:center;
+            }
+            #TJ4{
+                width:100%;
+                height:62.5px;
+                background-color:red;
+                text-align:center;
+            }
+            #TJ5{
+                width:100%;
+                height:62.5px;
+                text-align:center;
+            }
+            #TJ6{
+                width:100%;
+                height:62.5px;
+                background-color:red;
+                text-align:center;
+            }
+            #TJ7{
+                width:100%;
+                height:62.5px;
+                text-align:center;
+            }
+            #TJ8{
+                width:100%;
+                height:62.5px;
+                background-color:red;
+                text-align:center;
+            }
+            #WZ2{
+                width:5%;
+                float:left;
+                background-color: black;
+            }
+            #WZ21{
+                width:100%;
+                height:62.5;
+                background-color: red;
+            }
+            #WZ22{
+                width:100%;
+                height:62.5;
+            }
+            #WZ23{
+                width:100%;
+                height:62.5;
+                background-color: red;
+            }
+            #WZ24{
+                width:100%;
+                height:62.5;
+            }
+            #WZ25{
+                width:100%;
+                height:62.5;
+                background-color: red;
+            }
+            #WZ26{
+                width:100%;
+                height:62.5;
+            }
+            #WZ27{
+                width:100%;
+                height:62.5;
+                background-color: red;
+            }
+            #WZ28{
+                width:100%;
+                height:62.5;
+            }
+            #WZ3{
+                width:50%;
+                float:right;
+                background-color:black;
+            }
+            #WZ30{
+                width:100%;
+                height:30px;
+                float:right;
+                text-align:center;
+            }
+            #WZ31{
+                width:100%;
+                height:62.5px;
+                text-align:center;
+            }
+            #WZ32{
+                width:100%;
+                height:62.5px;
+                background-color:red;
+                text-align:center;
+            }
+            #WZ33{
+                width:100%;
+                height:62.5px;
+                text-align:center;
+            }
+            #WZ34{
+                width:100%;
+                height:62.5px;
+                background-color:red;
+                text-align:center;
+            }
+            #WZ35{
+                width:100%;
+                height:62.5px;
+                text-align:center;
+            }
+            #WZ36{
+                width:100%;
+                height:62.5px;
+                background-color:red;
+                text-align:center;
+            }
+            #WZ37{
+                width:100%;
+                height:62.5px;
+                text-align:center;
+            }
+            #WZ38{
+                width:100%;
+                height:62.5px;
+                background-color:red;
+                text-align:center;
+            }
+            #S1{
+                width:33%;
+                height:230px;
+                float:left;
+                background-color:#777777;
+                line-height: 230px;
+            }
+            #S1 a{
+                font-size: 32px;
+                float:right;
+            }
+            #S1 img{
+                background-size: 100%;
+                width: 126px;
+                height: 140px;
+                float:right;
+                margin-top: 50px;
+            }
+            #S2{
+                width:33%;
+                height:230px;
+                float:left;
+                background-color:#777777;
+            }
+            #S3{
+                width:34%;
+                height:230px;
+                float:left;
+                background-color:#777777;
+            }
+            .S30{
+                font-size:32px;
+                width:100px;
+                height: 50px;
+                display: inline-block;
+                position: relative;
+                top:-55px;
+                left:112px;
+            }
+            .S31{
+                background-size: 100%;
+                width: 100px;
+                height: 100px;
+                position: relative;
+                top: 50px;
+            }
+            .S32{
+                background-size: 100%;
+                width: 90px;
+                height: 90px;
+                position: relative;
+                top: 50px;
+            }
+            .S33{
+                font-size: 23px;
+                position: relative;
+                display: inline-block;
+                top:60px;
+            }
+            #bot{
+                width: 100%;
+                height: 50px;
+            }
+            #bot p{
+                display: inline-block;
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 50px;
+                margin-left: 310px;
+            }
+            #app #third #GT{
+                text-align: center;
+            }
+            .swiper-container {
+                margin: 0 auto;
+                width: 516px;
+                height: 291px;
+            }
+
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
             }
         </style>
+    
     </head>
     <body>
         <div id="app">
@@ -97,38 +375,28 @@
                 </div>
                 <div id ="P205">
                     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/205Parkour.png">
-                </div>
-                <div id="PL205">
-                <a href="205Parkour.html"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <div id="PL205">
+                        <a href="205Parkour.html"><br>MORE</a>
+                        </div>
                 </div>
             </div>
 
             <div id ="third">
                 <div id ="GT">
-                    <script language="javascript" type="text/javascript">
-                        var ranl = 0;
-                        var useRand = 0;
-                        img = new Array;
-                            images[1] = new Image();
-                            images[1].src = "../img/P1.png";
-                            images[2] = new Image();
-                            images[2].src = "../img/P2.png";
-                            images[3] = new Image();
-                            images[3].src = "../img/P3.png";
-                            images[4] = new Image();
-                            images[4].src = "../img/P4.png";
-                            function swapPic(){
-                                var imgnum = images.length-1;
-                            do{
-                                var randnum = Math.random();
-                                    randl = Math.round((imgnum-1)*randnum)+1;
-                                }while(randl==useRand);
-                                useRand = randl;
-                                document.randimg.src = images[useRand].src
-                                        setTimeout('swapPic()',2000);
-                            }
-                    </script>
-                    <img name = "P1" src="../img/P1.png">
+                    <!-- <div class="container"></div> -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="../img/P1.png" width="516px" height="291px" alt=""></div>
+                            <div class="swiper-slide"><img src="../img/P2.png" width="516px" height="291px" alt=""></div>
+                            <div class="swiper-slide"><img src="../img/P3.jpg" width="516px" height="291px" alt=""></div>
+                            <div class="swiper-slide"><img src="../img/P4.png" width="516px" height="291px" alt=""></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="banner-nav-bg"></div>
                 </div>    
                 <div id ="SP1">
                     <video width="360" height="360" controls="controls">
@@ -137,7 +405,7 @@
                             <embed src="../video/this is the life.mp4" width="360" height="360" />
                         </object>
                     </video>
-                    <center style="color: white">this is the life</center>
+                    <a style="color: white">this is the life</a>
                 </div>
                 <div id ="SP2">
                     <video width="360" height="360" controls="controls">
@@ -146,14 +414,15 @@
                             <embed src="../video/2015年度总结.mp4" width="360" height="360" />
                         </object>
                     </video>
-                    <center style="color:white">2015年度总结</center>
+                    <a style="color:white">2015年度总结</a>
                 </div>
             </div>
 
             <div id ="fourth">
-                <div id = "S2051">
-                    <div id ="S205"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <img src="../img/205SB.png"></div>
+                <div id = "S205">
+                    <div id ="S2051"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/205SB.png">
+                        <div id="PL2052"><a href="205Parkour.html"><br>MORE</a></div>
+                    </div>
                     <div id = "SP3">
                         <video width="240" height="240" controls="controls">
                             <source src="../video/chill.mp4" type="video/mp4" />
@@ -161,7 +430,7 @@
                                 <embed src="../video/chill.mp4" width="240" height="240" />
                             </object>
                         </video>
-                        <center style="color: white">2020-5-5 chill</center>
+                        <a style="color: white">chill</a>
                     </div>
                     <div id = "SP4">
                         <video width="240" height="240" controls="controls">
@@ -170,7 +439,7 @@
                                 <embed src="../video/年前LastSakte.mp4" width="240" height="240" />
                             </object>
                         </video>
-                        <center style="color: white">2020-1-23 年前LastSakte</center>
+                        <a style="color: white">年前LastSakte</a>
                     </div>
                     <div id = "SP5">
                         <video width="240" height="240" controls="controls">
@@ -179,15 +448,130 @@
                                 <embed src="../video/2019北科珠江最佳进步之星奖.mp4" width="240" height="240" />
                             </object>
                         </video>
-                        <center style="color: white">2019-11-18 2019北科珠江最佳进步之星奖</center>
+                        <a style="color: white">北科珠江最佳进步之星奖</a>
                     </div>
-                </div>
-                <div id="PL205">
-                    <a href="205SkateBoard.html"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                 </div>
                 <div id ="XC">
                     <a href="205XiangCe.html"><img src="../img/sb.gif"/></a>
                 </div>
+            </div>      
+
+            <div id="fifth">
+                <div id="WZ1">
+                    <div id="TJ">
+                        <a style="color: white">推荐阅读</a>
+                    </div>
+                    <div id="TJ1">
+                        <br><a href="index.html">巴西呲台季军争夺赛：LUAN OLIVEIRA x KAUE COSSA</a>
+                    </div>
+                    <div id="TJ2">
+                        <br><a href="index.html">HUF 2020夏季系列Lookbook发布！</a>
+                    </div>
+                    <div id="TJ3">
+                        <br><a href="index.html" >Sean Davis做客Berrics忍者训练！</a>
+                    </div>
+                    <div id="TJ4">
+                        <br><a href="index.html" >旧金山地形历险记,Alex Moran影片「Helen」个人片段发布</a>
+                    </div>
+                    <div id="TJ5">
+                        <br><a href="index.html" >法国猛兽 Aurelien Giraud 7分钟攻占Berrics板场高能时刻</a>
+                    </div>
+                    <div id="TJ6">
+                        <br><a href="index.html" >Nike SB X Kevin Bradley | 你若晴天便是天堂，你若下雨便是地狱！</a>
+                    </div>
+                    <div id="TJ7">
+                        <br><a href="index.html" >Justice 「未见系列 2」随夏而至，总有一款让你心动的配色！</a>
+                    </div>
+                    <div id="TJ8">
+                        <br><a href="index.html" >滑手的外出时间，Daniel Lebron最新影片「8am」出炉</a>
+                    </div>
+                </div>
+                <div id="WZ2">
+                    <div id="WZ21"></div>
+                    <div id="WZ22"></div>
+                    <div id="WZ23"></div>
+                    <div id="WZ24"></div>
+                    <div id="WZ25"></div>
+                    <div id="WZ26"></div>
+                    <div id="WZ27"></div>
+                    <div id="WZ28"></div>
+                </div>
+                <div id="WZ3">
+                    <div id="WZ30">
+                        <a style="color: white">滑板教学</a>
+                    </div>
+                    <div id="WZ31">
+                        <br><a href="index.html" >滑板初学者，新手解惑</a>
+                    </div>
+                    <div id="WZ32">
+                        <br><a href="index.html" >Ollie</a>
+                    </div>
+                    <div id="WZ33">
+                        <br><a href="index.html">Frontside ollie 180</a>
+                    </div>
+                    <div id="WZ34">
+                        <br><a href="index.html" >Fick flip</a>
+                    </div>
+                    <div id="WZ35">
+                        <br><a href="index.html" >360 flip/tre flip</a>
+                    </div>
+                    <div id="WZ36">
+                        <br><a href="index.html" >Swtich kick flip</a>
+                    </div>
+                    <div id="WZ37">
+                        <br><a href="index.html" >Fakie big spin</a>
+                    </div>
+                    <div id="WZ38">
+                        <br><a href="index.html" >Nollie backside ollie 360</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sixth">
+                <div id="SS">
+                    <div id="S1">
+                        <a style="color: white;">205TEAM</a>
+                        <img src="../img/Logo.png">
+                    </div>
+                    <div id="S2">
+                        
+                    </div>
+                    <div id="S3">
+                        <span class="S30" style="color: white;">关注我</span>
+                        <a href="https://weibo.com/p/1005055614666127/home?"><img class="S31" src="http://www.whatsupmag.cn/statics/images/sk8/weibo.png" alt="" data-bd-imgshare-binded="1"></a>
+                        <a href="https://space.bilibili.com/30367069?"><img class="S32" src="../img/Bilibili.png"></a>
+                        <br><a class="S33" style="color: white;">QQ:1337870865</a>
+                        <a class="S33" style="color: white;">电话：1111111111x</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id ="bottom">
+                <div id="bot">
+                    <p>微博:205Mmx  bilibili:205Mmx  抖音:205Mmx</p>
+                    <p>205Team-MX</p>
+                </div>
+            </div>
         </div>
+        <script src="../js/swiper.js"></script>
+        <script type="text/javascript">
+                var swiper = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    paginationClickable: true,
+                    loop: true,
+                    autoplay: 2000,
+                    speed: 1000,
+                    prevButton: '.swiper-button-prev',
+                    nextButton: '.swiper-button-next',
+                    effect: 'fade',//  effect: 'flip',effect: 'coverflow',slide', 'fade',cube
+                    grabCursor: true,
+                    cube: {
+                        shadow: false,
+                        slideShadows: false,
+                        shadowOffset: 20,
+                        shadowScale: 0.94
+                    }
+                }); 
+        </script>
     </body>
 </html>
