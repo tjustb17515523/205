@@ -3,6 +3,7 @@
         <title>205历年照片</title>
         <meta name="keywords" content="跑酷，滑板" />
         <style src="css/bootstrap.css"></style>
+        <link rel="stylesheet" href="../css//swiper.css">
         <style>
             *{
                 margin: 0;
@@ -28,6 +29,38 @@
                 width:1538px;
                 margin: 0 auto;
             }
+            #app #second #GT{
+                text-align: center;
+            }
+            .swiper-container {
+                margin: 0 auto;
+                width: 960px;
+                height: 540px;
+            }
+
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }
+            #third{
+                width:1225px;
+                margin: 0 auto;
+            }
         </style>
     </head>
     <body>
@@ -37,5 +70,51 @@
                 <p>微博:205Mmx  bilibili:205Mmx  抖音:205Mmx</p>
             </div>
         <div id = "P205TM"><img src="../img/205TM.png"/></div>
+
+        <div id ="sceond">
+            <div id ="GT">
+                <!-- <div class="container"></div> -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../img/MX1.jpg" width="960px" height="540px" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/MX2.jpg" width="960px" height="540px" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/MX4.jpg" width="960px" height="540px" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/MX5.jpg" width="960px" height="540px" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/MX7.jpeg" width="960px" height="540px" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/MX8.jpg" width="960px" height="540px" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/MX10.jpg" width="960px" height="540px" alt=""></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="banner-nav-bg"></div>
+            </div>
+
+        <div id="third">
+            <img src="../img/205MX历年照片.png"/>
+        </div>
+
+        <script src="../js/swiper.js"></script>
+        <script type="text/javascript">
+                var swiper = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    paginationClickable: true,
+                    loop: true,
+                    autoplay: 2000,
+                    speed: 1000,
+                    prevButton: '.swiper-button-prev',
+                    nextButton: '.swiper-button-next',
+                    effect: 'fade',//  effect: 'flip',effect: 'coverflow',slide', 'fade',cube
+                    grabCursor: true,
+                    cube: {
+                        shadow: false,
+                        slideShadows: false,
+                        shadowOffset: 20,
+                        shadowScale: 0.94
+                    }
+                }); 
+        </script>
     </body>
 </html>

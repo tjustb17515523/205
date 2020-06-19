@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0pc;
+}
+body{
+    background: #f4f4f4 url('http://www.whatsupmag.cn/statics/css/sk8/images/bg.jpg') repeat;
+    min-width: 300px;
+    font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6em;
+}
+/* 头部区域 */
+#top{
+    width: 100%;
+    height: 50px;
+    background-color: #777777;
+}
+#top p{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+    margin-left: 500px;
+}
+
+/* 主题内容 */
+#main{
+    width: 100%;
+    margin-bottom: 100px;
+}
+#main_top{
+    width: 60%;
+    height: 42px;
+    background-color: #EDEDED;
+    margin: 20px auto;
+    line-height: 42px;
+}
+#main_top a{
+    font-size: 14px;
+    color: #2A2A63;
+    text-decoration: none;
+    margin: 0 10px;
+}
+#main_top a:hover{
+    font-size: 14px;
+    color: #FFAD53;
+    text-decoration: none;
+    margin: 0 10px;
+}
+#main_top img{
+    position: relative;
+    top: 4px;
+    margin: 0 10px;
+}
+#main_content{
+    width: 60%;
+    height: 1110px;
+    background-color: white;
+    margin: 0 auto;
+}
+#main_content h1{
+    width: 90%;
+    text-align: center;
+    padding: 40px 57px;
+}
+#main_content #author{
+    width: 90%;
+    height: 30px;
+    margin: 20px 5%;
+    border-bottom: 2px solid #EAEAEA;
+    padding: 5px;
+    line-height: 30px;
+}
+#author a{
+    cursor: pointer;
+    color: black;
+}
+#author a:hover{
+    color: #FFADA5;
+}
+#main_content span{
+    
+    color: #8D8DAB;
+}
+#main_C{
+    width: 1000px;
+    margin: 40px 70px;
+    height: 800px;
+    /* background-color: #FFADA5; */
+}
+#main_C  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+#main_C .p1{
+    margin: 40px 0;
+    font-size: 16px;
+    color: #2A2A2A;
+    line-height: 38px;
+    text-indent: 2em;
+}
+#praise{
+     text-align: center;
+}
+#main_C #a1{
+    display: inline-block;
+    zoom: 1;
+    height: 40px;
+    background: #f1f1f1;
+    border: #1fa7c3 1px solid;
+}
+#main_C #a1:hover{
+    border: #D64136 1px solid;
+}
+#main_C .article-like-icon:hover{
+    border-right: #D64136 1px solid;
+    background: #D64136 url(http://www.whatsupmag.cn/statics/css/sk8/images/like.png) no-repeat 0 0;
+}
+#main_C .article-like-icon{
+    cursor: pointer;
+    display: block;
+    float: left;
+    padding-left: 30px;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    border-right: #1fa7c3 1px solid;
+    background: #16c1e4 url(http://www.whatsupmag.cn/statics/css/sk8/images/like.png) no-repeat 0 0;
+    color: #fff;
+}
+#main_C .article-like-number{
+    display: inline-block;
+    zoom: 1;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #2a2a2a;
+} 
+#main_c_footer{
+    width: 100%;
+    height: 100px;
+    /* background-color: #FFADA5; */
+}
+#main_c_footer p{
+    color: #8D8D8D;
+    display: inline-block;
+    padding: 11px;
+}
+#main_c_footer a{
+    text-decoration: none;
+    color: #2A2A2A;
+}
+#main_c_footer a:hover{
+    text-decoration: none;
+    color: #FFA501;
+}
+#main_c_footer button{
+    width: 80px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    background-color: #1fa7c3;
+    border: none;
+}
+#main #P205TM{
+    width:1538px;
+    margin: 0 auto;
+}
+
+/* 底部区域 */
+#bot{
+    width: 100%;
+    height: 50px;
+}
+#bot p{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+    margin-left: 310px;
+}
+
+
+
+
+
+#S1{
+    width:33%;
+    height:230px;
+    float:left;
+    background-color:#777777;
+    line-height: 230px;
+}
+#S1 a{
+    font-size: 32px;
+    float:right;
+}
+#S1 img{
+    background-size: 100%;
+    width: 126px;
+    height: 140px;
+    float:right;
+    margin-top: 50px;
+}
+#S2{
+    width:33%;
+    height:230px;
+    float:left;
+    background-color:#777777;
+}
+#S3{
+    width:34%;
+    height:230px;
+    float:left;
+    background-color:#777777;
+}
+.S30{
+    font-size:32px;
+    width:100px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    top:-55px;
+    left:112px;
+}
+.S31{
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+}
+.S32{
+    background-size: 100%;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: 50px;
+}
+.S33{
+    font-size: 23px;
+    position: relative;
+    display: inline-block;
+    top:60px;
+}
